@@ -25,9 +25,8 @@ public class Unit7Application {
 	private JdbcTemplate jdbcTemplate;
 
 	@PostConstruct
-	private void createJokesTable(){
-		jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS jokes (joke text)");
-
+	private void createWeatherTable(){
+		jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS all_weather (weather text)");
 	}
 
 }
